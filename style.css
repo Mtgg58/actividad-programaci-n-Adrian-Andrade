@@ -1,0 +1,123 @@
+/* Configuraciones basicas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f13;
+    color: #ffffff;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra lateral */
+.menu-lateral {
+    width: 250px;
+    background-color: #1a1a24;
+    padding: 20px;
+    border-right: 2px solid #2d2d3b;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.enlaces {
+    list-style: none;
+    padding: 0;
+}
+
+.enlaces li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #252530;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el mouse por el menu */
+.enlaces li:hover {
+    background-color: #00e5ff;
+    color: #000;
+}
+
+/* El menu que esta seleccionado actualmente */
+.activo {
+    background-color: #00e5ff !important;
+    color: #000 !important;
+}
+
+/* --- Contenido principal --- */
+.contenido {
+    flex: 1;
+    padding: 40px;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.btn-neon {
+    background-color: transparent;
+    color: #b829ea; /* Morado Neón */
+    border: 2px solid #b829ea;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-neon:hover {
+    background-color: #b829ea;
+    color: #fff;
+}
+
+/* --- Tarjetas de torneos --- */
+.contenedor-tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #1a1a24;
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+    border: 1px solid #333;
+}
+
+.tarjeta:hover {
+    border-color: #00e5ff;
+}
+
+/* Etiquetas pequeñas para los juegos */
+.etiqueta-juego {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.valorant { background-color: #ff4655; color: white; }
+.lol { background-color: #c89b3c; color: black; }
+.csgo { background-color: #f59e0b; color: black; }
